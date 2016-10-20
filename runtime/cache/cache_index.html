@@ -1,50 +1,25 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Lab Framwork</title>
+//获取域名或主机地址 
+echo $_SERVER['HTTP_HOST']."<br>"; #localhost
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+//获取网页地址 
+echo $_SERVER['PHP_SELF']."<br>"; #/blog/testurl.php
 
-        <style>
-            html, body {
-                height: 100%;
-            }
+//获取网址参数 
+echo $_SERVER["QUERY_STRING"]."<br>"; #id=5
 
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
+//获取用户代理 
+echo $_SERVER['HTTP_REFERER']."<br>"; 
 
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+//获取完整的url
+echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'];
+#http://localhost/blog/testurl.php?id=5
 
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
+//包含端口号的完整url
+echo 'http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"]; 
+#http://localhost:80/blog/testurl.php?id=5
 
-            .title {
-                font-size: 96px;
-            }
-            .line {
-            	color: black;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="content">
-                <div class="title">Lab Framework</div>
-                <span class="line"><b>shiyanlou---Admin</b></span>
-                <!-- <h1>shiyanlou---Admin </h1> -->
-            </div>
-        </div>
-    </body>
-</html>
+//只取路径
+$url='http://'.$_SERVER['SERVER_NAME'].$_SERVER["REQUEST_URI"]; 
+echo dirname($url);
+#http://localhost/blog
