@@ -1,9 +1,5 @@
 <?php 
 namespace core;
-
-/**
-* 模板解析类
-*/
 class Parser
 {
 	private $content;

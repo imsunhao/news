@@ -1,9 +1,6 @@
 <?php 
 namespace core;
 
-/**
-* 配置类
-*/
 class Config
 {
 	private static $config = [];

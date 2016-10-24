@@ -3,9 +3,6 @@ namespace core;
 
 use core\Config;
 use core\Parser;
-/**
-* 视图类
-*/
 class View
 {
 	public $vars = [];

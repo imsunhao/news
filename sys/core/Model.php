@@ -4,9 +4,6 @@ namespace core;
 use core\Config;
 use PDO;
 
-/**
- * 模型基类
- */
 class Model
 {
 	protected $db;
@@ -56,7 +53,6 @@ class Model
 		$this->db = null;
 	}
 
-	/*获得客户端真实的IP地址*/
 	function getip() {
 		if (getenv("HTTP_CLIENT_IP") && strcasecmp(getenv("HTTP_CLIENT_IP"), "unknown")) {
 			$ip = getenv("HTTP_CLIENT_IP");
@@ -123,19 +119,18 @@ class Model
 		}
 	}
 
-	public function select($fields,$wheres = [],$options = 'and')
-	{
+	public function select($fields,$wheres = [],$options = 'and'){
 		$field = '';
-		if (is_string($fields)) {
+		if (is_string($fields)){
 			$field = $fields;
 		} elseif (is_array($fields)) {
-			foreach ($fields as $key => $value) {
+			foreach ($fields as $key => $value){
 				$field .= $value.",";
 			}
 			$field = substr($field,0,strlen($field)-1);
 		}
 		$where = '';
-		foreach ($wheres as $key => $value) {
+		foreach ($wheres as $key => $value){
 			$where .= $key.' '.$options." '$value',";
 		}
 		$where = substr($where,0,strlen($where)-1);
@@ -167,8 +162,7 @@ class Model
 		}
 	}
 
-	protected function log_error($message = '',$sql = '')
-	{
+	protected function log_error($message = '',$sql = ''){
 		$ip = $this->getip();
 		$time = date("Y-m-d H:i:s");
 		$message = $message . "\r\n$sql" . "\r\n客户IP:$ip" . "\r\n时间 :$time" . "\r\n\r\n";
@@ -176,9 +170,7 @@ class Model
 		$filename = $server_date . "_SQL.txt";
 		$file_path = RUNTIME_PATH. 'log' . DS .$filename;
 		$error_content = $message;
-		//$error_content="错误的数据库，不可以链接";
-		$file = RUNTIME_PATH. 'log'; //设置文件保存目录
-		//建立文件夹
+		$file = RUNTIME_PATH. 'log';
 		if (!file_exists($file)) {
 			if (!mkdir($file, 0777)) {
 				//默认的 mode 是 0777，意味着最大可能的访问权
@@ -209,21 +201,16 @@ class Model
 				echo "File $filename cannot write";
 			}
 		} else {
-			//首先要确定文件存在并且可写
 			if (is_writable($file_path)) {
-				//使用添加模式打开$filename，文件指针将会在文件的开头
 				if (!$handle = fopen($file_path, 'a')) {
 					echo "Cannot open $filename";
 					exit;
 				}
-				//将$somecontent写入到我们打开的文件中。
 				if (!fwrite($handle, $error_content)) {
 					echo "Cannot write $filename";
 					exit;
 				}
-				//echo "文件 $filename 写入成功";
 				echo "Error has been saved!";
-				//关闭文件
 				fclose($handle);
 			} else {
 				echo "File $filename cannot write";
@@ -231,4 +218,43 @@ class Model
 		}
 
 	}
+
+	public function selectLimit($fields,$wheres = [],$options = 'and',$pageNow,$pageSize){
+        $field = '';
+        if (is_string($fields)){
+            $field = $fields;
+        } elseif (is_array($fields)) {
+            foreach ($fields as $key => $value){
+                $field .= $value.",";
+            }
+            $field = substr($field,0,strlen($field)-1);
+        }
+        $where = '';
+        foreach ($wheres as $key => $value){
+            $where .= $key.' '.$options." '$value',";
+        }
+        $where = substr($where,0,strlen($where)-1);
+        $start=($pageNow-1)*$pageSize;
+        $sql = 'SELECT '.$field.' FROM '.$this->table.' WHERE '.$where.' LIMIT '.$start.','.$pageSize;
+        $pdo = $this->db->query($sql);
+        if ($pdo) {
+            $result = $pdo->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        } else {
+            $this->log_error('select error',$sql);
+            return false;
+        }
+    }
+
+    public  function getCount(){
+        $sql='SELECT count(*) AS length From '.$this->table;
+        $pdo = $this->db->query($sql);
+        if ($pdo) {
+            $result = $pdo->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        } else {
+            $this->log_error('select error',$sql);
+            return false;
+        }
+    }
 }

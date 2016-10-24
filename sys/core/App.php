@@ -3,9 +3,6 @@ namespace core;
 
 use core\Config;
 use core\Router;
-/**
-* 框架启动类
-*/
 class App
 {
 	public static $router;

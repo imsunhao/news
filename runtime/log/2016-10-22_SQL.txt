@@ -1,0 +1,25 @@
+save error
+INSERT INTO `news_user` (user,password) VALUES ('','')
+客户IP:::1
+时间 :2016-10-22 15:19:35
+
+save error
+INSERT INTO `users` (user,password) VALUES ('liujingwei','12342222')
+客户IP:::1
+时间 :2016-10-22 15:36:21
+
+save error
+INSERT INTO `users` (user,password) VALUES ('liujingwei','12342222')
+客户IP:::1
+时间 :2016-10-22 15:37:00
+
+save error
+INSERT INTO `users` (user,password) VALUES ('liujingwei','12342222')
+客户IP:::1
+时间 :2016-10-22 15:37:53
+
+save error
+INSERT INTO `news_users` (user,password) VALUES ('imsunhao','asdf')
+客户IP:::1
+时间 :2016-10-22 22:39:21
+

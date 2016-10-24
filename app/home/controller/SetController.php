@@ -2,13 +2,13 @@
 namespace home\controller;
 
 use core\Controller;
-use home\model\UserModel;
+use home\model\SetModel;
 
 class UserController extends Controller
 {
 	public function index()
 	{
-        $model = new UserModel();
+        $model = new SetModel();
         header("Content-type: text/html; charset=utf-8");
 
 	}

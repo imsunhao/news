@@ -2,11 +2,11 @@
 namespace home\model;
 
 use core\Model;
-class UserModel extends Model
+class SetModel extends Model
 {
 	function __construct()
 	{
-		parent::__construct('users');
+		parent::__construct('set');
 	}
 
 }

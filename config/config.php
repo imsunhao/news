@@ -1,11 +1,15 @@
 <?php 
 
 return [
-	'db_host' 	=>	'127.0.0.1',
-	'db_user' 	=>	'root',
-	'db_pwd' 	=>	'',
-	'db_name' 	=>	'labframe',
-	'db_table_prefix' 	=>	'lab_',
+//	'db_host' 	=>	'127.0.0.1',
+//	'db_user' 	=>	'root',
+//	'db_pwd' 	=>	'root',
+//    'db_name' 	=>	'news',
+    'db_host' 	=>	'118.123.21.153',
+    'db_user' 	=>	'imsunhao',
+    'db_pwd' 	=>	'Aa83119608',
+    'db_name' 	=>	'imsunhao',
+	'db_table_prefix' 	=>	'news_',
 	'db_charset' 	=>	'utf8',
 
     'default_module'    => 'home',
@@ -18,13 +22,10 @@ return [
 	'cache_type' 	=>	'file',
 	'complie_path' 	=>	RUNTIME_PATH . 'compile' .DS,
 
-    // 模板路径
     'view_path'    => APP_PATH .'home' . DS . 'view' . DS,
-    // 模板后缀
     'view_suffix'  => '.php',
 
-    'auto_cache' 	=> true,
-    // URL伪静态后缀
+    'auto_cache' 	=> false,
     'url_html_suffix'        => 'html',
 
 ];

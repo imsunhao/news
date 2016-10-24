@@ -3,9 +3,6 @@ namespace core;
 
 use core\View;
 use core\traits\Jump;
-/**
-* 控制器类
-*/
 class Controller
 {
 	use Jump;

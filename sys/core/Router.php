@@ -1,9 +1,6 @@
 <?php 
 namespace core;
 
-/**
-* 路由类
-*/
 class Router
 {
 	public $url_query;
