@@ -148,10 +148,16 @@ class Model
 	public function delete($wheres = [],$options = 'and')
 	{
 		$where = '';
-		foreach ($wheres as $key => $value) {
-			$where .= $key.' '.$options." '$value',";
-		}
-		$where = substr($where,0,strlen($where)-1);
+        if(count($wheres)>1){
+            foreach ($wheres as $key => $value) {
+                $where .= $value;
+            }
+        }else{
+            foreach ($wheres as $key => $value) {
+                $where .= $key.' '.$options." '$value'";
+            }
+        }
+//		$where = substr($where,0,strlen($where)-1);
 		$sql = 'DELETE FROM '.$this->table.' WHERE '.$where;
 		$pdo = $this->db->query($sql);
 		if ($pdo) {

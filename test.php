@@ -9,7 +9,5 @@
 ini_set('display_errors', 'off');
 error_reporting(0);
 header("Content-type: text/html; charset=utf-8");
-$json=urldecode($_SERVER["QUERY_STRING"]);
-$arr=json_decode($json);
-if($arr->{'a'})echo $arr->{'a'}."ok";
-else echo "a not exsit";
+//$json=urldecode($_SERVER["QUERY_STRING"]);
+echo $_POST['pic'];
