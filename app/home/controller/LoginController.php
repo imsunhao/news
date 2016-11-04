@@ -46,7 +46,6 @@ class LoginController extends Controller
         } else {
         }
     }
-
     public function password()
     {
         $model = new UserModel();
@@ -71,9 +70,5 @@ class LoginController extends Controller
             }
         } else {
         }
-    }
-    public function test(){
-        header("Content-type: text/html; charset=utf-8");
-        echo urldecode($_POST['pic']);
     }
 }

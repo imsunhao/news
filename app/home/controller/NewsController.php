@@ -9,7 +9,7 @@ class NewsController extends Controller
     {
         $model = new NewsModel();
         header("Content-type: text/html; charset=utf-8");
-        if($model->save(['user' => $_POST['user'], 'title' => $_POST['title'], 'author' => $_POST['author'], 'pic' => $_POST['pic'], 'date' => $_POST['date']])){
+        if($model->save(['user' => $_POST['user'], 'title' => $_POST['title'], 'author' => $_POST['author'], 'pic' => $_POST['pic'], 'date' => $_POST['date'], 'news' => $_POST['news']])){
             $response["error_code"] = 1;
             $response["reason"] = "success";
             echo json_encode($response);
