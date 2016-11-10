@@ -34,4 +34,24 @@ class FavoriteAuthorController extends Controller
             echo json_encode($response);
         }
     }
+    public function isFavorite(){
+        $model = new FavoriteAuthorModel();
+        header("Content-type: text/html; charset=utf-8");
+        if($result = $model->select(['user'], ['author' => $_POST['author']], '=')){
+            ini_set("display_errors", "off");
+            if($result[0]['user']==$_POST['user']){
+                $response["error_code"] = 1;
+                $response["reason"] = "success";
+                echo json_encode($response);
+            }else{
+                $response["error_code"] = -1;
+                $response["reason"] = "存在该author，但是不是本用户收藏";
+                echo json_encode($response);
+            }
+        }else{
+            $response["error_code"] = 0;
+            $response["reason"] = "没有该author";
+            echo json_encode($response);
+        }
+    }
 }

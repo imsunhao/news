@@ -48,4 +48,24 @@ class NewsController extends Controller
             echo json_encode($response);
         }
     }
+    public function isFavorite(){
+        $model = new NewsModel();
+        header("Content-type: text/html; charset=utf-8");
+        if($result = $model->select(['user'], ['news' => $_POST['news']], '=')){
+            ini_set("display_errors", "off");
+            if($result[0]['user']==$_POST['user']){
+                $response["error_code"] = 1;
+                $response["reason"] = "success";
+                echo json_encode($response);
+            }else{
+                $response["error_code"] = -1;
+                $response["reason"] = "存在该新闻，但是不是本用户收藏";
+                echo json_encode($response);
+            }
+        }else{
+            $response["error_code"] = 0;
+            $response["reason"] = "没有该新闻";
+            echo json_encode($response);
+        }
+    }
 }
