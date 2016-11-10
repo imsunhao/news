@@ -1,0 +1,75 @@
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:45
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:46
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:46
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:47
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:48
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:49
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:50
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:51
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:52
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:53
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:54
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:55
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:04:56
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15010482205','t15010482205.jpg','111111','许','随便','1')
+客户IP:117.136.0.116
+时间 :2016-11-02 10:17:28
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15010482205','t15010482205.jpg','123456','许','随便','1')
+客户IP:103.72.5.44
+时间 :2016-11-02 10:22:47
+

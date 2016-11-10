@@ -1,0 +1,25 @@
+select error
+SELECT user,author FROM news_favoriteAuthor WHERE user = '' LIMIT 0,
+客户IP:42.96.133.35
+时间 :2016-11-07 21:03:13
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:114.254.49.66
+时间 :2016-11-07 22:31:09
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:114.254.49.66
+时间 :2016-11-07 22:31:13
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:114.254.49.66
+时间 :2016-11-07 22:31:13
+
+save error
+INSERT INTO `news_users` (user,pic,password,name,username,sex) VALUES ('15232320232','t15232320232.jpg','111111','刘经纬','随便起','0')
+客户IP:114.254.49.66
+时间 :2016-11-07 22:31:14
+

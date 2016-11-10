@@ -8,14 +8,10 @@ class Model
 {
 	protected $db;
 	protected $table;
-	function __construct($table,$boolean=true)
+	function __construct($table = '')
 	{
 		$this->db = new PDO('mysql:host='.Config::get('db_host').';dbname='.Config::get('db_name').';charset='.Config::get('db_charset'),Config::get('db_user'),Config::get('db_pwd'));		
-		if($boolean){
-            $this->table = Config::get('db_table_prefix').$table;
-        }else{
-            $this->table = Config::get('db_table_prefix2').$table;
-        }
+		$this->table = Config::get('db_table_prefix').$table;
 	}
 
 	protected function getFields()

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>小组分工</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>小组分工</h1>
+<h2>鉴于大家基础不是很好，所以我们首先先试行这样的分工（麻雀虽小 五脏俱全）。</h2>
+<ol>
+<li>为了提高大家综合能力，咱们每个人都属于每个小组</li>
+<li>
+咱们一共5个人，所以有下面这5个分工
+<ol>
+<li>产品部</li>
+<li>后端部</li>
+<li>前端部</li>
+<li>UI部</li>
+<li>统筹部</li>
+</ol>
+</li>
+<li>每个部的部长专门负责这他部门一块。每个部门都很重要。</li>
+</ol>
+<h2>下面对这几个部门，做单独的分工说明：</h2>
+<h3><strong>产品部</strong></h3>
+<ol>
+<li>前期素材收集，这要求，平时要多多留意漂亮的图片，还要求有一定的ps能力（去除水印呀，什么的）收集素材记得要保留来源，比如 网址啦，或者其他（版权）。</li>
+<li>市场调研，市场预测。</li>
+<li>策划。</li>
+<li>项目进度监督。</li>
+<li>后期消费群体推广。</li>
+<li>公司公共关系。（提升公司形象）</li>
+<li>
+<p>新晋人员培训、考核。</p>
+<p><strong>技能需求</strong>：</p>
+<ol>
+<li>ps</li>
+<li>有一定的逻辑思维能力，能做项目进度报告</li>
+<li>眼界开放，能长远的思考一些问题。</li>
+<li>需要点公关知识</li>
+</ol>
+</li>
+</ol>
+<hr />
+<h3><strong>UI部</strong></h3>
+<ol>
+<li>项目人机交互</li>
+<li>项目操作逻辑</li>
+<li>项目界面美观</li>
+<li>项目整体设计</li>
+<li>
+<p>人性化思想（最终为软件用户方便使用软件着想）。</p>
+<p><strong>技能需求</strong>：</p>
+<ol>
+<li>熟悉使用 Axure RP 8</li>
+<li>需要要有人性化服务的思想</li>
+<li>平时需要多多观察优秀网站和app学习别人优秀的交互</li>
+<li>要有发现美的眼光</li>
+</ol>
+</li>
+</ol>
+<hr />
+<h3><strong>后端部</strong></h3>
+<ol>
+<li>后台搭建（MVC框架）（暂时不考虑使用流行的框架，就自己搭建了一个简单的框架，这样所有的操作，都由我们具体实现，对我们理解MVC框架思想有很大的帮助）。</li>
+<li>数据库搭建与维护。</li>
+<li>根据项目需求提供给前端对应端口。</li>
+<li>
+<p>服务器的搭建与维护</p>
+<p><strong>技能需求</strong>：</p>
+<ol>
+<li>逻辑性强</li>
+<li>熟悉mySQL数据库表的建设（事务，依赖关系，存储过程等等专业知识）</li>
+<li>较强的编程能力</li>
+<li>咱们项目首先推荐使用的是php作为后台</li>
+<li>有点http的相关知识，清晰的明白一个请求的发出与结束的过程</li>
+</ol>
+</li>
+</ol>
+<hr />
+<h3><strong>前端部</strong></h3>
+<ol>
+<li>项目人机交互实现</li>
+<li>项目操作逻辑实现</li>
+<li>项目界面美观实现</li>
+<li>
+<p>项目人性化数据展示的实现</p>
+<p><strong>技能需求</strong>：</p>
+<ol>
+<li>熟悉使用 webstorm。</li>
+<li>熟悉html。</li>
+<li>熟悉css。</li>
+<li>熟悉js。</li>
+<li>咱们是基于angular的ionic框架编写的，要求比较高了点（因为这里是最核心的，这里的好坏，是用户能直接感受到的）。</li>
+<li>熟悉angular框架的使用</li>
+<li>熟悉ionic框架的使用</li>
+</ol>
+</li>
+</ol>
+<hr />
+<h3><strong>统筹部</strong></h3>
+<ol>
+<li>项目糅合</li>
+<li>项目制作流程的记录</li>
+<li>项目讨论记录</li>
+<li>
+<p>项目贡献记录</p>
+<p><strong>技能需求</strong>：</p>
+<ol>
+<li>熟悉web全栈开发。</li>
+</ol>
+</li>
+</ol>
+<hr />
+<h2>基础技能要求</h2>
+<h4>就是说要了解点</h4>
+<ol>
+<li>WebStorm（从官网下正版，我有密钥）</li>
+<li>Emmet（WebStorm自带，这是一门快速编程的语言）</li>
+<li>Git(必须熟练，可以网上搜索下，我也会提供给大家点资料，版本控制器)</li>
+<li>markdown（超级方便的书写方法）</li>
+<li>html</li>
+<li>css</li>
+<li>js</li>
+<li>mySQl</li>
+<li>php</li>
+<li>Axure RP（UI设计软件）</li>
+<li>Json（前后端数据交互）</li>
+<li>AJAX</li>
+<li>jQuery（这些比较高深了，有兴趣可以看看）</li>
+<li>bootstrap</li>
+<li>angular</li>
+<li>Sass与Compass</li>
+<li>ionic</li>
+<li>项目课余时间做，现在学习还是最重要的，不要本末倒置。</li>
+</ol>
+<hr />
+<p>报告时间：2016-11-01 15:49:23
+报告人：孙颢</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,10 @@
+select error
+SELECT user,news,title,author,pic,date FROM news_news WHERE user = '' LIMIT 0,
+客户IP:42.96.133.35
+时间 :2016-11-04 14:19:36
+
+select error
+SELECT user,news,title,author,pic,date FROM news_news WHERE user = '' LIMIT 0,
+客户IP:42.96.133.35
+时间 :2016-11-04 14:56:22
+

@@ -17,6 +17,7 @@ class LoginController extends Controller
                 return;
             };
         };
+
 //        if ($model->save(['user' => $_POST['user'], 'pic' =>  'images/t'.$_POST['user'].'.jpg', 'password' => $_POST['password'], 'name' => $_POST['name'], 'username' => $_POST['username'], 'sex' => $_POST['sex']])) {
         if ($model->save(['user' => $_POST['user'], 'pic' => 't'.$_POST['user'].'.jpg' , 'password' => $_POST['password'], 'name' => $_POST['name'], 'username' => $_POST['username'], 'sex' => $_POST['sex']])) {
             $response["error_code"] = 1;
@@ -26,6 +27,7 @@ class LoginController extends Controller
             $response["reason"] = "erro";
         };
     }
+
     public function login()
     {
         $model = new UserModel();
@@ -46,6 +48,7 @@ class LoginController extends Controller
         } else {
         }
     }
+
     public function password()
     {
         $model = new UserModel();
@@ -70,5 +73,9 @@ class LoginController extends Controller
             }
         } else {
         }
+    }
+    public function test(){
+        header("Content-type: text/html; charset=utf-8");
+        echo urldecode($_POST['pic']);
     }
 }

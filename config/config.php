@@ -1,12 +1,15 @@
 <?php 
 
 return [
+//	'db_host' 	=>	'127.0.0.1',
+//	'db_user' 	=>	'root',
+//	'db_pwd' 	=>	'root',
+//    'db_name' 	=>	'news',
     'db_host' 	=>	'118.123.21.153',
     'db_user' 	=>	'imsunhao',
     'db_pwd' 	=>	'Aa83119608',
     'db_name' 	=>	'imsunhao',
-    'db_table_prefix' 	=>	'news_',
-    'db_table_prefix2' 	=>	'sh_',
+	'db_table_prefix' 	=>	'news_',
 	'db_charset' 	=>	'utf8',
 
     'default_module'    => 'home',
