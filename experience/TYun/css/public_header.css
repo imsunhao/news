@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header .header_top{height:35px;background:#171f2a;}
+.header .header_top_inner,.header .header_bot_inner{width:1200px;margin:0 auto;}
+.header .header_top .header_top_inner .sign{float:left;height:35px; line-height:35px;padding-left:6px;}
+.header .header_top .header_top_inner .sign span{padding:0 10px;}
+.header .header_top_inner .header_top_nav{float:right;}
+.header .header_top_inner .header_top_nav li{float:left;height:35px; line-height:35px;}
+.header .header_top_inner .header_top_nav li a{padding:0 11px;}
+.header .header_top_inner .header_top_nav .MagementCenter{background:url(../images/public_header_nav_bg_03.jpg) no-repeat 11px 10px;}
+.header .header_top_inner .header_top_nav .MagementCenter a{padding:0 11px 0 35px;}
+.header .header_top_inner .header_top_nav li span a{color:#ffb700;}
+.header .header_top_inner .header_top_nav li span a:hover{color:#FFF500;}
+.header .header_top_inner .header_top_nav .cstm{background:url(../images/public_header_nav_bg_06.jpg) no-repeat right center;}
+.header .header_top_inner .header_top_nav .cstm a{padding-right:21px;}
+.header .header_bot{height:60px;background:#2b3443;}
+.header .header_bot .header_bot_inner .header_bot_div_pic{padding-left:10px;float:left;}
+.header .header_bot .header_bot_inner .header_bot_div_pic li{float:left;padding-right:13px;height:60px;line-height:60px;/*vertical-align:central;*/}
+.header .header_bot .header_bot_inner .header_bot_div_pic .fengexian{height:30px;width:1px;background:#495261;padding-right:0;margin-right:13px;margin-top:18px;}
+.header .header_bot .header_bot_inner .header_bot_div_pic li a{display:block;}
+.header .header_bot .header_bot_inner .header_bot_div_pic .last{padding-right:0px;}
+.header .header_bot .header_bot_inner .header_bot_div_pic .hulianwang{margin-top:13px;}
+.header .header_bot .header_bot_inner .header_bot_div_pic .tengxunyun{margin-top:7px;}
+.header .header_bot .header_bot_inner .header_bot_div_pic .fiveYearsHappy_icon{margin-top:11px;}
+.header .header_bot .header_bot_inner .header_bot_nav{float:left;padding-left:9px;}
+.header .header_bot .header_bot_inner .header_bot_nav li{height:60px;line-height:60px;float:left;}
+.header .header_bot .header_bot_inner .header_bot_nav li a{font-size:16px;color:#fff;display:block;height:60px;padding:0 21px 0 19px;}
+.header .header_bot .header_bot_inner .header_bot_nav li a:hover{color:#ffb700;background:#202833;}
+.header .header_bot .header_bot_inner .header_bot_nav .active{background:#202833;}
+.header .header_bot .header_bot_inner .header_bot_nav .active a{color:#ffb700;}
+.header .header_bot .header_bot_inner .header_bot_nav .active a:hover{color:#FFF500;}

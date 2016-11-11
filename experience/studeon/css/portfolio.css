@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{height:797px;position:relative;}
+.main h3{text-transform:uppercase;font-size:23px;line-height:50px;height:50px;text-align:center;padding-top:80px;color:#000000;}
+.main .nav{text-align:center;}
+.main .nav ul{height:65px;display:inline-block;*display:block;*zoom:1;}
+.main .nav ul .active a{color:red;}
+.main .nav ul li{height:65px;float:left;}
+.main .nav ul li a{display:block;padding:0 16px;height:65px;line-height:65px;color:#222220;text-transform:uppercase;font-size:13px;font-weight:bolder;}
+.main .nav ul li a:hover{color:red;}
+.main .pic{font-size:0;width:1140px;margin:0 auto;}
+.main .pic img{width:285px;float:left;}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.main{height:1067px;}
+.main h3{height:144px;line-height:144px;font-size:27px;padding-top:27px;text-align:center;color:#2f3533;text-transform:uppercase;}
+.main h4{height:108px;line-height:108px;font-size:27px;padding-top:31px;text-align:center;color:#2f3533;text-transform:uppercase;}
+.main .top_inner{height:275px; width:1140px; margin:0 auto;}
+.main .top{height:128px;}
+.main .top ul{float:left;}
+.main .top li{float:left; width:380px; height:128px;position:relative;background:url(../images/ser-bg.png) no-repeat center;}
+.main .top li a{display:block;width:380px;height:128px;position:absolute;z-index:3;}
+.main .top li a:hover .icon{border:#fff solid 1px;}
+.main .top li .icon{width:67px; height:123px; background:url(../images/s-icons.png) #ed5844 no-repeat;; float:left;}
+.main .top li dl{padding-left:87px; padding-top:10px; width:267px; float:left;}
+.main .top li dt{line-height:38px; font-size:16px; font-family:arial; color:#545253; font-weight:bolder;}
+.main .top li dd{line-height:20px; color:#a6a6a6; font-size:13px; font-family:arial;}
+.main .top li .yi{background-position:18px 43px;}
+.main .top li .er{background-position:-66px 43px;}
+.main .top li .san{background-position:-144px 43px;}
+.main .top li .si{background-position:22px -74px;}
+.main .top li .wu{background-position:-64px -69px;}
+.main .top li .liu{background-position:-142px -69px;}
+.main .top_xia{padding-top:20px;}
+.main .somany{text-align:center;width:1140px;height:470px;margin:0 auto;}
+.main .somany li{float:left;width:380px;height:235px;}
+.main .somany .li_big_pic{position:relative;}
+.main .somany li .so_big_pic{position:absolute;top:-35px;}
+.main .somany li h5{text-transform:uppercase;padding-top:15px;color:#343434;line-height:37px;height:37px;font-size:16px;}
+.main .somany li .so_pic{width:78px;height:78px;display:inline-block;*display:block;*zoom:1;background:url(../images/img-sprite.png) no-repeat;}
+.main .somany li .so_pic_01{background-position:-11px -11px;}
+.main .somany li .so_pic_02{background-position:-112px -11px;}
+.main .somany li .so_pic_03{background-position:-212px -11px;}
+.main .somany li .so_pic_04{background-position:-312px -11px;}
+.main .somany li .so_pic_05{background-position:-413px -11px;}
+.main .somany li .so_big_pic img{width:380px;}
+.main .somany li p{line-height:23px;color:#686868;font-size:13px;width:323px;}

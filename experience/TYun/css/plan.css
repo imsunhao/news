@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner{height:540px;background:#e2e3e7 url(../images/plan_banner_bg_02.jpg) no-repeat center;}
+
+.main_01{height:2150px;}
+.main_01 .main_01_top{height:1025px;border-bottom:#dbdbdb solid 1px;text-align:center;}
+.main_01 .main_01_top h1{height:232px;font-size:56px;font-weight:normal;line-height:232px;padding-top:20px;}
+.main_01 .main_01_top ul{}
+.main_01 .main_01_top ul li{width:182px;height:306px;float:left;position:relative;padding:0 163px;}
+.main_01 .main_01_top ul .sp{padding:0;}
+.main_01 .main_01_top ul .bot{padding-top:84px;}
+.main_01 .main_01_top ul li h4{padding-top:141px;height:77px;line-height:77px;font-size:30px;font-weight:normal;color:#1e1d2b;}
+.main_01 .main_01_top ul li p{padding-left:1px;width:182px;line-height:25px;font-size:13px;font-weight:normal;color:#1e1d2b;text-align:left;color:#9c9895;}
+.main_01 .main_01_top ul li p span{color:#ffb107;}
+.main_01 .main_01_top ul li a{display:block;width:182px;height:306px;position:absolute;}
+.main_01 .main_01_top ul li .plan_main_01_top_bg_01{background:url(../images/plan_main_01_top_bg_03.jpg) no-repeat center top;}
+.main_01 .main_01_top ul li .plan_main_01_top_bg_02{background:url(../images/plan_main_01_top_bg_05.jpg) no-repeat center top;}
+.main_01 .main_01_top ul li .plan_main_01_top_bg_03{background:url(../images/plan_main_01_top_bg_07.jpg) no-repeat center top;}
+.main_01 .main_01_top ul li .plan_main_01_top_bg_04{background:url(../images/plan_main_01_top_bg_12.jpg) no-repeat center top;}
+.main_01 .main_01_top ul li .plan_main_01_top_bg_05{background:url(../images/plan_main_01_top_bg_13.jpg) no-repeat center top;}
+.main_01 .main_01_top ul li .plan_main_01_top_bg_06{background:url(../images/plan_main_01_top_bg_14.jpg) no-repeat center top;}
+.main_01 .main_01_top ul li a:hover{border:#fff solid 1px;}
+
+.main_01 .main_01_bot{}
+.main_01 .main_01_bot h1{height:274px;font-size:56px;font-weight:normal;line-height:274px;text-align:center;}
+.main_01 .main_01_bot .main_01_liucheng{width:766px;height:49px;text-align:center;border-bottom:#646c77 dashed 2px;margin:0 auto;position:relative;}
+.main_01 .main_01_bot .main_01_liucheng ul{position:absolute;width:1000px;left:-62px;top:26px;}
+.main_01 .main_01_bot .main_01_liucheng ul li{float:left;width:180px;height:114px;}
+.main_01 .main_01_bot .main_01_liucheng ul li p{text-align:center;font-size:14px;color:#646c77;padding-left:0px;}
+.main_01 .main_01_bot .main_01_liucheng ul li .liucheng_number{margin-left: 63px;color:#646c77;font-size:28px;width:42px;height:42px;line-height:42px;border:#646c77 solid 2px;border-radius:42px;background-color:#fff;}
+.main_01 .main_01_bot .main_01_liucheng p{}
+.main_01 .main_01_bot a{display:block;margin:0 auto;width:280px;}
+.main_01 .main_01_bot h2{padding-top:107px;height:123px;line-height:123px;font-size:30px;font-weight:normal;padding-left:96px;}
+.main_01 .main_01_bot h3{border-radius:2px;height:50px;line-height:50px;font-size:20px;font-weight:normal;text-align:center;background:#0071cd;color:#fff;margin-top:107px;cursor:pointer;}
+.main_01 .main_01_bot a:hover h3{border-radius:30px;box-shadow:0 0 150px #0071cd;}
+.main_01 .main_01_bot p{color:#131b1e;line-height:40px;font-size:16px;font-weight:normal;padding-left:96px;}
+
+.main_02{}
+.main_02 .main_02_top{height:484px;background:#006fcb;}
+.main_02 .main_02_top dl{height:354px;text-align:center;}
+.main_02 .main_02_top dt{font-size:56px;color:#fff;padding-top:42px;height:150px;line-height:150px;}
+.main_02 .main_02_top dd{font-size:16px;color:#fffdfb;}
+.main_02 .main_02_top ul{height:130px;}
+.main_02 .main_02_top ul li{float:left;height:130px;width:24.9%;border-right:#0064b9 solid 1px;position:relative;text-align:center;}
+.main_02 .main_02_top ul li p{font-size:30px;color:#fff;height:130px;line-height:130px;cursor:pointer;}
+.main_02 .main_02_top ul li:hover{background:#007be2;}
+.main_02 .main_02_top ul li:hover .main_02_sanjiao{display:block;}
+.main_02 .main_02_top ul li .main_02_sanjiao{width:0px;height:0px;position:absolute;left:50%;bottom:0;border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:20px solid #FFFFFF;display:none;transform:translateX(-50%);}
+.main_02 .main_02_top ul .main_02_top_active .main_02_sanjiao{display:block;}
+.main_02 .main_02_top ul .main_02_top_active{background:#007be2;}
+.main_02 .main_02_top ul .main_02_top_dujia p{background:url(../images/plan_mian_02_ul_dujia_03.jpg) no-repeat 70% center;}
+
+.main_02 .main_02_bot{height:530px;width:1200px;margin:0 auto;}
+.main_02 .main_02_bot .main_02_dl_box{height:180px;padding-top:100px;}
+.main_02 .main_02_bot a{display:block;margin:0 auto;width:280px;}
+.main_02 .main_02_bot a:hover h3{border-radius:30px;box-shadow:0 0 150px #0071cd;}
+.main_02 .main_02_bot h3{border-radius:2px;height:50px;line-height:50px;font-size:20px;font-weight:normal;text-align:center;background:#0071cd;color:#fff;margin-top:100px;cursor:pointer;}
+.main_02 .main_02_bot dl{height:182px;width:299px;float:left;border-right:#e1e1e1 solid 1px;}
+.main_02 .main_02_bot dl dt{font-size:30px;line-height:40px;height:40px;width:299px;text-align:center;color:#161613;}
+.main_02 .main_02_bot dl dd{font-size:16px;line-height:30px;width:210px;padding-top:23px;color:#1c203b;margin:0 auto;}
+
+.main_03{background:#f1f6fc;height:924px;}
+.main_03 .main_03_top{width:1006px;margin:0 auto;}
+.main_03 .main_03_top h1{height:274px;font-size:56px;font-weight:normal;line-height:274px;text-align:center;}
+.main_03 .main_03_top .main_03_huodong{width:894px;height:11px;text-align:center;border-bottom:#bec3c9 solid 2px;margin:0 auto;position:relative;}
+.main_03 .main_03_top .main_03_huodong ul{position:absolute;width:894px;left:40px;top:-2px;z-index:3;}
+.main_03 .main_03_top .main_03_huodong ul li{float:left;width:203px;height:124px;cursor:pointer;}
+.main_03 .main_03_top .main_03_huodong ul li a{display:block;width:203px;height:124px;position:relative;}
+.main_03 .main_03_top .main_03_huodong ul .main_03_huodong_active{background:url(../images/plan_main_03_li_bg_03.jpg) no-repeat center bottom;}
+.main_03 .main_03_top .main_03_huodong ul .main_03_huodong_active .liucheng_number{background:#076fc4;}
+.main_03 .main_03_top .main_03_huodong ul li:hover{background:url(../images/plan_main_03_li_bg_03.jpg) no-repeat center bottom;}
+.main_03 .main_03_top .main_03_huodong ul li:hover .liucheng_number{background:#076fc4;}
+.main_03 .main_03_top .main_03_huodong ul li h5{cursor:pointer;padding-top:23px;font-weight:normal;color:rgb(9,13,62);height:21px;line-height:21px;font-size:16px;}
+.main_03 .main_03_top .main_03_huodong ul li p{cursor:pointer;color:#646c77;padding-left:0px;height:21px;line-height:21px;font-size:16px;}
+.main_03 .main_03_top .main_03_huodong ul .main_03_huodong_last p{padding-top:23px;}
+.main_03 .main_03_top .main_03_huodong ul .main_03_huodong_last .liucheng_number{border-color:#646c77;}
+.main_03 .main_03_top .main_03_huodong ul .main_03_huodong_last:hover .liucheng_number{background:#dcdcdc;}
+.main_03 .main_03_top .main_03_huodong ul li .liucheng_number{margin-left: 50%;transform:translateX(-50%);width:22px;height:22px;border:#076fc4 solid 2px;border-radius:22px;background-color:#fff;}
+.main_03 .main_03_top .main_03_anpai{height:109px;border-bottom:2px #bdc2c8 solid;position:relative;}
+.main_03 .main_03_top .main_03_anpai .zuo{position:absolute;left:-4px;top:-55px;z-index:4;width:70px;width:70px;}
+.main_03 .main_03_top .main_03_anpai .you{position:absolute;left:962px;top:-55px;z-index:4;width:70px;width:70px;}
+.main_03 .main_03_top .main_03_anpai .zuo a,.main_03 .main_03_top .main_03_anpai .you a{width:70px;font-size:70px;color:rgba(7, 104, 183, 0.4);}
+.main_03 .main_03_top .main_03_anpai .zuo a:hover{color:rgba(7, 104, 183, 1)}
+.main_03 .main_03_top .main_03_anpai .you a:hover{color:rgba(7, 104, 183, 1)}
+.main_03 .main_03_top a{display:block;margin:0 auto;width:280px;}
+.main_03 .main_03_top h2{height:120px;line-height:120px;font-size:30px;font-weight:normal;}
+.main_03 .main_03_top p{color:#131b1e;line-height:40px;font-size:16px;font-weight:normal;}
+.main_03 .main_03_top p span{font-size:16px;font-weight:bolder;padding-right:26px;}
+.main_03 .main_03_top h3{border-radius:2px;height:50px;line-height:50px;font-size:20px;font-weight:normal;text-align:center;background:#dcdcdc;color:#fff;margin-top:107px;cursor:pointer;}
+.main_03 .main_03_top a:hover h3{border-radius:30px;box-shadow:0 0 150px #dcdcdc;}
+
+.main_04{height:530px;}
+.main_04 h1{height:255px;font-size:56px;font-weight:normal;line-height:255px;text-align:center;}
+.main_04 ul{text-align:center;padding-left: 90px;}
+.main_04 ul li{float:left;width:200px;cursor:pointer;}
+.main_04 ul li .main_04_pic{height:85px;}
+.main_04 ul li .main_04_pic_01{background:url(../images/plan_mian_04_ul_pic_01.png) no-repeat center;}
+.main_04 ul li .main_04_pic_02{background:url(../images/plan_mian_04_ul_pic_02.png) no-repeat center;}
+.main_04 ul li .main_04_pic_03{background:url(../images/plan_mian_04_ul_pic_03.png) no-repeat center;}
+.main_04 ul li .main_04_pic_04{background:url(../images/plan_mian_04_ul_pic_04.png) no-repeat center;}
+.main_04 ul li .main_04_pic_05{background:url(../images/plan_mian_04_ul_pic_05.png) no-repeat center;}
+.main_04 ul li p{height:85px;line-height:85px;cursor:pointer;}
+
+.main_05{height:638px;background:#f1f6fc;} 
+.main_05 h1{height:174px;line-height:174px;font-size:56px;font-weight:normal;text-align:center;padding-top:40px;}
+.main_05 .main_05_bigBox{width:1140px;height:326px;margin:0 auto;}
+.main_05 .main_05_bigBox .box{width:421px;height:326px;padding-left:148px;float:left;}
+.main_05 .main_05_bigBox .main_05_left{border-right:#dee1e6 1px solid;}
+.main_05 .main_05_bigBox dt,h4{height:76px;line-height:76px;color:#290102;font-size:30px;}
+.main_05 .main_05_bigBox dt span{float:right;padding-right:76px;}
+.main_05 .main_05_bigBox dt span a{color:#006ad0;font-size:14px;}
+.main_05 .main_05_bigBox .main_05_right p{height:34px;line-height:34px;font-size:14px;color:#1e2e3b;}
+.main_05 .main_05_bigBox .main_05_left dd{height:34px;line-height:34px;padding:5px 0 0px 14px;background:url(../images/index_main_bot_dd_bg_03.jpg) no-repeat left center;}
+.main_05 .main_05_bigBox .main_05_left dd a{font-size:14px;color:#1e2e3b;}
+.main_05 .main_05_bigBox .main_05_left dd a:hover{color:#006ad0;}

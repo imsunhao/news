@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+a{text-decoration:none}
+input,img{border:none;}
+input{outline:none;}
+ul,ol{list-style:none;}
+.clear{clear:both;}
+.inner{width:1200px;margin:0 auto;}
+
+
+h1,dt{color:#222222;}
+h2,p,dd{color:#5f6263;font-weight:normal;}
+.font{display:inline-block;font-size:40px;color:#178880;opacity:0;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);transition:all ease-in-out 0.3s;}

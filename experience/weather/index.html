@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气日历</title>
+    <link href="stylesheets/screen.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+    <link href="stylesheets/index.css" rel="stylesheet">
+</head>
+<body class="root">
+
+<div class="container c-pannel">
+
+    <div class="col-md-4" id="c-city">
+        <form class="form-inline">
+            <select id="par" class="form-control"> 
+                <option>北京</option>
+            </select>
+            <label class="control-label">省</label>
+            <select id="city" class="form-control"> 
+                <option>北京</option>
+            </select>
+            <label class="control-label">市</label>
+            <select id="block" class="form-control"> 
+                <option value="101010100">北京</option>
+                <option value="101010200">海淀</option>
+                <option value="101010300">朝阳</option>
+                <option value="101010400">顺义</option>
+                <option value="101010500">怀柔</option>
+                <option value="101010600">通州</option>
+                <option value="101010700">昌平</option>
+                <option value="101010800">延庆</option>
+                <option value="101010900">丰台</option>
+                <option value="101011000">石景山</option>
+                <option value="101011100">大兴</option>
+                <option value="101011200">房山</option>
+                <option value="101011300">密云</option>
+                <option value="101011400">门头沟</option>
+                <option value="101011500">平谷</option>
+            </select>
+            <label class="control-label">区</label>
+        </form>
+    </div>
+
+    <div class="col-md-4">
+        <button type="button" class="btn btn-success btn-lg">
+            天气日历
+        </button>
+    </div>
+
+    <div class="col-md-4" id="c-mouth">
+
+        <button type="button" class="btn btn-primary btn-sm" id="left">
+            <span class="glyphicon glyphicon-arrow-left"></span>
+        </button>
+
+        <button type="button" class="btn btn-info btn-lg" id="year">
+            2016年
+        </button>
+
+        <button type="button" class="btn btn-info btn-lg" id="mouth">
+            10月
+        </button>
+
+        <button type="button" class="btn btn-primary btn-sm" id="right">
+            <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+
+    </div>
+
+</div>
+
+<div id="content" class="container-fluid table-bordered">
+    <div class="date-rowH clearfix">
+        <div class="date-heade date-week">日</div>
+        <div class="date-heade">一</div>
+        <div class="date-heade">二</div>
+        <div class="date-heade">三</div>
+        <div class="date-heade">四</div>
+        <div class="date-heade">五</div>
+        <div class="date-heade date-week">六</div>
+    </div>
+
+    <div class="date-row clearfix">
+        <div class="date date-week date-disable">
+            <h3 class="h3-modefiy">28 <small>初八</small></h3>
+        </div>
+        <div class="date date-disable">
+            <h3 class="h3-modefiy">29 <small>初九</small></h3>
+            <h2 class="h2-modefiy">晴</h2>
+            <h3 class="h3-modefiy2"><span>25°</span> <small>/20°</small></h3>
+        </div>
+        <div class="date">
+            <h3 class="h3-modefiy">1 <small>初一</small></h3>
+            <h2 class="h2-modefiy">大暴雨</h2>
+            <h3 class="h3-modefiy2"><span>25°</span> <small>/20°</small></h3>
+        </div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date date-week"></div>
+    </div>
+    <div class="date-row clearfix">
+        <div class="date date-week">
+            <h3>28 <small>初八</small></h3>
+            <h3>28 <small>初八</small></h3>
+            <h4>28 <small>初八</small></h4>
+            <h4>28 <small>初八</small></h4>
+        </div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date date-week"></div>
+    </div>
+    <div class="date-row clearfix">
+        <div class="date date-week">
+            <h3>28 <small>初八</small></h3>
+            <h3>28 <small>初八</small></h3>
+            <h4>28 <small>初八</small></h4>
+            <h4>28 <small>初八</small></h4>
+        </div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date date-week"></div>
+    </div>
+    <div class="date-row clearfix">
+        <div class="date date-week">
+            <h3>28 <small>初八</small></h3>
+            <h3>28 <small>初八</small></h3>
+            <h4>28 <small>初八</small></h4>
+            <h4>28 <small>初八</small></h4>
+        </div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date date-week"></div>
+    </div>
+    <div class="date-row clearfix">
+        <div class="date date-week">
+            <h3>28 <small>初八</small></h3>
+            <h3>28 <small>初八</small></h3>
+            <h4>28 <small>初八</small></h4>
+            <h4>28 <small>初八</small></h4>
+        </div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date date-week"></div>
+    </div>
+    <div class="date-row clearfix">
+        <div class="date date-week">
+            <h3>28 <small>初八</small></h3>
+            <h3>28 <small>初八</small></h3>
+            <h4>28 <small>初八</small></h4>
+            <h4>28 <small>初八</small></h4>
+        </div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date"></div>
+        <div class="date date-week"></div>
+    </div>
+
+    <div id="inform" class="weather-nothing">
+        sorry 因为信息不够充足<br/>所以功能还在完善中<br/>暂无此处信息<br/>点击鼠标可以关闭<br/>
+        <span class="tb-border"></span>
+        <span class="tb-background"></span>
+    </div>
+
+</div>
+
+</body>
+<script src="javascripts/data.js"></script>
+<script src="javascripts/util.js"></script>
+<script src="javascripts/newIndex.js"></script>
+</html>

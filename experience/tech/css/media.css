@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:980px){#warp{width:96%}article{width:61%;padding:0 3%;}aside{width:24%;}article img{width:100%}}
+@media screen and (max-width:800px){article{width:auto;float:none;}aside{width:auto;float:none;margin-top:10px;}nav ul{display:none;}nav .icon{display:block;}nav form input{position:absolute;width:80px;top:-111px;right:0;}nav form input:focus{width:129px;}}
+/*@media screen and (max-width:480px){aside{display:none;}header{height:119px;}}*/

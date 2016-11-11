@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.footer {background:#27303f;}
+.footer .footer_top_inner,.footer .footer_bot_inner{width:1200px;margin:0 auto;}
+.footer .footer_top_inner{height:281px;border-bottom:#323c48 1px solid;}
+.footer .footer_top_inner .fot_nav{height:249px;}
+.footer .footer_top_inner .fot_nav dl{float:left;width:182px;height:209px;padding-top:40px;}
+.footer .footer_top_inner .fot_nav .div_icon{width:70px;height:209px;}
+.footer .footer_top_inner .fot_nav .div_icon .mig_icon{padding-bottom:35px;}
+.footer .footer_top_inner .fot_nav .last{width:171px;height:209px;}
+.footer .footer_top_inner .fot_nav .last dt{font-size:12px;line-height:15px;height:15px;padding:0;padding-left:10px;}
+.footer .footer_top_inner .fot_nav .last .text_last{padding-top:13px;}
+.footer .footer_top_inner .fot_nav .last dd{line-height:21px;}
+.footer .footer_top_inner .fot_nav dt{padding-bottom:14px;}
+.footer .footer_top_inner .fot_nav dl dd{line-height:26px;}
+.footer .footer_top_inner .fot_nav dl dd p{float:left;width:44px;height:17px;line-height:17px;}
+.footer .footer_top_inner .fot_nav dl .erweima{padding:0px 0 14px 10px;}
+.footer .footer_top_inner .fot_nav dl dd .div_weibo1{float:left;}
+.footer .footer_top_inner .fot_nav dl dd .div_weibo2{float:left;padding-left:15px;}
+.footer .footer_top_inner .fot_nav dl dd .div_weibo1 a{display:block;background:url(../images/public_footer_nav_weibo_03.jpg) no-repeat;height:17px;width:18px;}
+.footer .footer_top_inner .fot_nav dl dd .div_weibo2 a{display:block;background:url(../images/public_footer_nav_weibo_05.jpg) no-repeat;height:17px;width:14px;}
+.footer .footer_top_inner .fot_nav dl dd .div_weibo1 a:hover{background:url(../images/public_footer_nav_weibo_tep_03.jpg) no-repeat;}
+.footer .footer_top_inner .fot_nav dl dd .div_weibo2 a:hover{background:url(../images/public_footer_nav_weibo_tep_05.jpg) no-repeat;}
+.footer .footer_top_inner .fot_nav dl dd,.footer .footer_top_inner .fot_nav dl dt{padding-left:10px;}
+.footer .footer_top_inner .fot_centnav{padding-left:222px;height:35px;}
+.footer .footer_top_inner .fot_centnav li{float:left;line-height:32px;height:32px;}
+.footer .footer_top_inner .fot_centnav li a{font-size:14px;line-height:32px;padding:0 10px;color: #757985;}
+.footer .footer_top_inner .fot_centnav li a:hover{color:#ffb700;}
+.footer .footer_top_inner .fot_centnav li a span{font-size:24px;font-style:italic;font-family:arial;line-height:32px;height:32px;}
+.footer .footer_bot_inner{height:143px;}
+.footer .footer_bot_inner p{padding-top:13px;line-height:30px;text-align:center;color:#515b5d;}
