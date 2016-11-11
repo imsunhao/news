@@ -5,13 +5,14 @@
     <title>我是孙颢 web前端工程师</title>
     <meta name="keywords" content="个人网站,前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准">
     <link rel="stylesheet" href="stylesheets/imsunhao.css">
-    <script src="javascript/jquery-3.1.0.min.js"></script>
-    <script src="javascript/jquery.hover3d.min.js"></script>
-    <script src="javascript/modernizr.js"></script>
+    <script src="lib/jquery/js/jquery-3.1.0.min.js"></script>
+    <script src="lib/jquery/js/jquery.hover3d.min.js"></script>
+    <script src="lib/modernizr.js"></script>
+    <script>window.JSONData='<?php echo $this->vars['JSONData']; ?>';</script>
     <script src="javascript/main.js"></script>
 </head>
 <body>
-<a href="#cd-nav" class="cd-nav-trigger">
+<a class="cd-nav-trigger">
     Menu<span></span>
 </a>
 <canvas id="cvs" width="200" height="200"></canvas>
@@ -39,150 +40,7 @@
             </div>
         </header>
         <div class="cd-content">
-            <section id="cd-timeline" class="cd-container">
-
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img is-hidden">
-                        <img src="images/t01.jpg" alt="imsunhao">
-                    </div>
-                    <div class="cd-timeline-content is-hidden">
-                        <div class="cd-timeline-content-inner">
-                            <div class="movie__card">
-                                <div class="layer-1">
-
-                                </div>
-                                <div class="layer-3">
-                                    <span class="cd-date">
-                                        <time class="time-start">2016年10月26日</time>-<time class="time-end">至今</time>
-                                    </span>
-                                </div>
-                                <div class="layer-4">
-
-                                    <h2>基于lamp的海滨网络系统</h2>
-
-                                    <p>啦啦啦啦啦啦，；啊；啊算了道格拉斯了大概1</p>
-
-                                    <a href="#0" class="cd-read-more">Read more</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img is-hidden">
-                        <img src="images/t01.jpg" alt="imsunhao">
-                    </div>
-                    <div class="cd-timeline-content is-hidden">
-                        <div class="cd-timeline-content-inner">
-                            <div class="movie__card">
-                                <div class="layer-1">
-
-                                </div>
-                                <div class="layer-3">
-                                    <span class="cd-date">
-                                        <time class="time-start">2016年10月26日</time>-<time class="time-end">至今</time>
-                                    </span>
-                                </div>
-                                <div class="layer-4">
-
-                                    <h2>基于lamp的海滨网络系统</h2>
-
-                                    <p>啦啦啦啦啦啦，；啊；啊算了道格拉斯了大概1</p>
-
-                                    <a href="#0" class="cd-read-more">Read more</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img is-hidden">
-                        <img src="images/t01.jpg" alt="imsunhao">
-                    </div>
-                    <div class="cd-timeline-content is-hidden">
-                        <div class="cd-timeline-content-inner">
-                            <div class="movie__card">
-                                <div class="layer-1">
-
-                                </div>
-                                <div class="layer-3">
-                                    <span class="cd-date">
-                                        <time class="time-start">2016年10月26日</time>-<time class="time-end">至今</time>
-                                    </span>
-                                </div>
-                                <div class="layer-4">
-
-                                    <h2>基于lamp的海滨网络系统</h2>
-
-                                    <p>啦啦啦啦啦啦，；啊；啊算了道格拉斯了大概1</p>
-
-                                    <a href="#0" class="cd-read-more">Read more</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img is-hidden">
-                        <img src="images/t01.jpg" alt="imsunhao">
-                    </div>
-                    <div class="cd-timeline-content is-hidden">
-                        <div class="cd-timeline-content-inner">
-                            <div class="movie__card">
-                                <div class="layer-1">
-
-                                </div>
-                                <div class="layer-3">
-                                    <span class="cd-date">
-                                        <time class="time-start">2016年10月26日</time>-<time class="time-end">至今</time>
-                                    </span>
-                                </div>
-                                <div class="layer-4">
-
-                                    <h2>基于lamp的海滨网络系统</h2>
-
-                                    <p>啦啦啦啦啦啦，；啊；啊算了道格拉斯了大概1</p>
-
-                                    <a href="#0" class="cd-read-more">Read more</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cd-timeline-block">
-                    <div class="cd-timeline-img is-hidden">
-                        <img src="images/t01.jpg" alt="imsunhao">
-                    </div>
-                    <div class="cd-timeline-content is-hidden">
-                        <div class="cd-timeline-content-inner">
-                            <div class="movie__card">
-                                <div class="layer-1">
-
-                                </div>
-                                <div class="layer-3">
-                                    <span class="cd-date">
-                                        <time class="time-start">2016年10月26日</time>-<time class="time-end">至今</time>
-                                    </span>
-                                </div>
-                                <div class="layer-4">
-
-                                    <h2>基于lamp的海滨网络系统</h2>
-
-                                    <p>啦啦啦啦啦啦，；啊；啊算了道格拉斯了大概1</p>
-
-                                    <a href="#0" class="cd-read-more">Read more</a>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
+            <section id="cd-timeline" class="cd-container"></section>
         </div>
     </section>
 </main>
@@ -190,41 +48,46 @@
 <nav class="cd-nav-container" id="cd-nav">
     <header>
         <h3>imsunhao</h3>
-        <a href="#0" class="cd-close-nav">Close</a>
+        <a class="cd-close-nav">Close</a>
     </header>
-
     <ul class="cd-nav">
         <li class="cd-selected" data-menu="index">
-            <a href="index.html">
+            <a>
+                <span><i class="glyphicon glyphicon-tower"></i></span>
                 <em>项目经历</em>
             </a>
         </li>
 
         <li data-menu="projects">
-            <a href="projects.html">
+            <a>
+                <span><i class="glyphicon glyphicon-stats"></i></span>
                 <em>个人情况</em>
             </a>
         </li>
 
         <li data-menu="about">
-            <a href="about.html">
+            <a>
+                <span><i class="glyphicon glyphicon-user"></i></span>
                 <em>专业技能</em>
             </a>
         </li>
 
         <li data-menu="services">
-            <a href="services.html">
+            <a>
+                <span><i class="glyphicon glyphicon-thumbs-up"></i></span>
                 <em>企业文化</em>
             </a>
         </li>
 
         <li data-menu="careers">
-            <a href="careers.html">
+            <a>
+                <span><i class="glyphicon glyphicon-cutlery"></i></span>
                 <em>生活技能</em>
             </a>
         </li>
         <li data-menu="contact">
-            <a href="contact.html">
+            <a>
+                <span><i class="glyphicon glyphicon-send"></i></span>
                 <em>联系方式</em>
             </a>
         </li>

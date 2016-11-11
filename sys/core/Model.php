@@ -8,10 +8,11 @@ class Model
 {
 	protected $db;
 	protected $table;
-	function __construct($table = '')
+	function __construct($table,$boolean=true)
 	{
 		$this->db = new PDO('mysql:host='.Config::get('db_host').';dbname='.Config::get('db_name').';charset='.Config::get('db_charset'),Config::get('db_user'),Config::get('db_pwd'));		
-		$this->table = Config::get('db_table_prefix').$table;
+		if($boolean) $this->table = Config::get('db_table_prefix').$table;
+        else $this->table = Config::get('db_table_prefix2').$table;
 	}
 
 	protected function getFields()
@@ -225,7 +226,30 @@ class Model
 
 	}
 
-	public function selectLimit($fields,$wheres = [],$options = 'and',$pageNow,$pageSize){
+
+    public function selectWithoutWheres($fields='*')
+    {
+        $field = '';
+        if (is_string($fields)) {
+            $field = $fields;
+        } elseif (is_array($fields)) {
+            foreach ($fields as $key => $value) {
+                $field .= $value . ",";
+            }
+            $field = substr($field, 0, strlen($field) - 1);
+        }
+        $sql = 'SELECT '.$field.' FROM '.$this->table;
+        $pdo = $this->db->query($sql);
+        if ($pdo) {
+            $result = $pdo->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        } else {
+            $this->log_error('selectWithoutWheres error',$sql);
+            return false;
+        }
+    }
+
+	public function selectLimit($fields,$wheres = [],$options = 'and',$pageNow = 1,$pageSize = 10){
         $field = '';
         if (is_string($fields)){
             $field = $fields;

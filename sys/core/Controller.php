@@ -17,6 +17,7 @@ class Controller
 			return $this;
 		} else {
 			$this->vars[$name] = $value;
+            return $this;
 		}
 	}
 
