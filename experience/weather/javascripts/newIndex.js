@@ -191,7 +191,7 @@ function iniCalendar() {
                         }
                     }
                     aODate[i][b].innerHTML = '<h3 class="h3-modefiy">' + startDate + ' <small>' + algorithms.cDay(startDate++) + '</small></h3>' +
-                        '<p class="text-center loading"><img src="/homeWork/images/ajax-loader.gif" height="100" width="100"/></p>';
+                        '<p class="text-center loading"><img src="images/ajax-loader.gif" height="100" width="100"/></p>';
                     // if(!bool){
                     //     aODate[i][b].style.a=startDate-1;
                     // }
@@ -218,6 +218,7 @@ function changeCity(city) {
         }
     }
     $.getJSON('http://apis.baidu.com/tianyiweather/basicforecast/weatherapi?area=' + city, function (json) {
+        console.log(JSON.stringify(json));
 
         for(i=0;i<aLoading.length;i++){
             aLoading[i].style.display="none";
@@ -292,8 +293,8 @@ function changeCity(city) {
                             if(o[c].ID==parseInt(aforecast[today][index])){
                                 chineseName=o[c].中文名称;
                                 englishName=o[c].英文名称;
-                                chineseName=weather.trim();
-                                englishName=weatherE.trim();
+                                weather=chineseName.trim();
+                                weatherE=englishName.trim();
                                 break;
                             }
                         }

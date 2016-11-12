@@ -86,7 +86,7 @@ window.onload = function () {
             oLoading.style.display="block";
             document.getElementById('title').innerHTML = json.data.forecast[0].date + ' '
                 + json.data.forecast[0].type + ' '
-                + '<img src=images/b_' + findIcon(json.data.forecast[0].type) + '.gif/>'
+                + '<img src=/experience/weather/images/b_' + findIcon(json.data.forecast[0].type) + '.gif/>'
                 + '<p>' + json.data.wendu + '° ' + json.data.ganmao + '</p>';
 
             var string = '';

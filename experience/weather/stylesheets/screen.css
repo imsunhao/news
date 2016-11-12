@@ -16,6 +16,6 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
-.weather-sprite { background-image: url('../images/weather-s7d7f30d92d.png'); background-repeat: no-repeat; }
+.weather-sprite { background-image: url('/experience/weather/images/weather-s7d7f30d92d.png'); background-repeat: no-repeat; }
 
 /*# sourceMappingURL=screen.css.map */
