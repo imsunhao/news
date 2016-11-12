@@ -1,0 +1,182 @@
+$Square_size:8;
+$GobackMsg_color:5;
+$sectionSize:400px;
+$sectionFootPosition:-1%;
+
+$Square_Action: (
+        padding: 10px,
+        margin: 0% 1%,
+        color: blue,
+        height:90%,
+        width: 10.5%
+);
+
+%Square {
+  background-color: map-get($Square_Action, color);
+  height: map-get($Square_Action, height);
+  width: map-get($Square_Action, width);
+  margin: map-get($Square_Action, margin);
+  float:left;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+@for $i from 0 to $Square_size{
+  .Square_#{$i}{
+    height:12.5% ;
+    width: 100%;
+  }
+  @for $b from 0 to $Square_size {
+    .Square_#{$i}_#{$b} {
+      @extend %Square;
+    }
+  }
+}
+@for $i from 1 to $GobackMsg_color{
+  #goback_#{$i} {
+    color:mix(#00ff00, #0000ff, $i*10);
+  }
+}
+
+.clearfix{
+  &:after{
+    content:"";
+    height:0;
+    clear: both;
+    display: block;
+  }
+}
+
+ul,ol{
+  list-style: none;
+}
+
+ul{
+  height: map-get($Square_Action, height);
+}
+
+.menu{
+  //width: (map-get($Square_Action, margin)+map-get($Square_Action, width))*$Square_size/2 - map-get($Square_Action, margin)*2;
+  height: map-get($Square_Action, height);
+  margin: 0  map-get($Square_Action, margin);
+  float: left;
+  text-align: center;
+  line-height:map-get($Square_Action, height);
+  background: darkgray;
+  &:hover{
+    color:brown;
+    background: honeydew;
+  }
+  display: none;
+}
+
+#menuClear{}
+#menuBack{}
+
+#section{
+  //float: left;
+  //border: 2px solid beige;
+  position: absolute;
+  top:0;
+  left: 0;
+  &:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  width: $sectionSize;
+  height:$sectionSize;
+
+  .fourFoot_1{
+    top:$sectionFootPosition;left:$sectionFootPosition;
+    cursor:nwse-resize;
+    @extend %fourFoot;
+  }
+  .fourFoot_2{
+    top:$sectionFootPosition;right:$sectionFootPosition;
+    cursor:nesw-resize;
+    @extend %fourFoot;
+  }
+  .fourFoot_3{
+    bottom:$sectionFootPosition;right:$sectionFootPosition;
+    cursor:nwse-resize;
+    @extend %fourFoot;
+  }
+  .fourFoot_4{
+    bottom:$sectionFootPosition;left:$sectionFootPosition;
+    cursor:nesw-resize;
+    @extend %fourFoot;
+  }
+  .fourSide_1{
+    width:100%;height:1%;
+    top:0;left:0;
+    cursor: row-resize;
+    @extend %fourSide;
+  }
+  .fourSide_2{
+    height:100%;width:1%;
+    top:0;right:0;
+    cursor: col-resize;
+    @extend %fourSide;
+  }
+  .fourSide_3{
+    width:100%;height:1%;
+    bottom:0;left:0;
+    cursor: row-resize;
+    @extend %fourSide;
+  }
+  .fourSide_4{
+    height:100%;width:1%;
+    top:0;left:0;
+    cursor: col-resize;
+    @extend %fourSide;
+  }
+}
+#aside{
+  float: left;
+  .scroll{
+    width:9%;
+    padding-left: 1%;
+    position:absolute;
+    height:50px;
+    background:#ccc;
+    top:0;
+    right:0;
+  }
+  height: 900px;
+  border: 1px solid brown;
+  position:relative;
+  display: none;
+}
+#consolo{
+  width:90%;
+  position:absolute;
+  top:0;
+  left:0;
+  padding-left: 10px;
+}
+
+%fourFoot{
+  width:2%;
+  height: 2%;
+  position:absolute;
+  background: #ccc;
+  z-index:3;
+}
+%fourSide{
+  position:absolute;
+  background: #666;
+  z-index:2;
+}
+
+#before{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}

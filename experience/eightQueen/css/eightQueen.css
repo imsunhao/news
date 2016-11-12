@@ -1,0 +1,174 @@
+.Square_0_0, .Square_0_1, .Square_0_2, .Square_0_3, .Square_0_4, .Square_0_5, .Square_0_6, .Square_0_7, .Square_1_0, .Square_1_1, .Square_1_2, .Square_1_3, .Square_1_4, .Square_1_5, .Square_1_6, .Square_1_7, .Square_2_0, .Square_2_1, .Square_2_2, .Square_2_3, .Square_2_4, .Square_2_5, .Square_2_6, .Square_2_7, .Square_3_0, .Square_3_1, .Square_3_2, .Square_3_3, .Square_3_4, .Square_3_5, .Square_3_6, .Square_3_7, .Square_4_0, .Square_4_1, .Square_4_2, .Square_4_3, .Square_4_4, .Square_4_5, .Square_4_6, .Square_4_7, .Square_5_0, .Square_5_1, .Square_5_2, .Square_5_3, .Square_5_4, .Square_5_5, .Square_5_6, .Square_5_7, .Square_6_0, .Square_6_1, .Square_6_2, .Square_6_3, .Square_6_4, .Square_6_5, .Square_6_6, .Square_6_7, .Square_7_0, .Square_7_1, .Square_7_2, .Square_7_3, .Square_7_4, .Square_7_5, .Square_7_6, .Square_7_7 {
+  background-color: blue;
+  height: 90%;
+  width: 10.5%;
+  margin: 0% 1%;
+  float: left;
+  transition: all 0.2s;
+  cursor: pointer; }
+
+.Square_0 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_1 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_2 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_3 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_4 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_5 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_6 {
+  height: 12.5%;
+  width: 100%; }
+
+.Square_7 {
+  height: 12.5%;
+  width: 100%; }
+
+#goback_1 {
+  color: #001ae6; }
+
+#goback_2 {
+  color: #0033cc; }
+
+#goback_3 {
+  color: #004db3; }
+
+#goback_4 {
+  color: #006699; }
+
+.clearfix:after {
+  content: "";
+  height: 0;
+  clear: both;
+  display: block; }
+
+ul, ol {
+  list-style: none; }
+
+ul {
+  height: 90%; }
+
+.menu {
+  height: 90%;
+  margin: 0 0% 1%;
+  float: left;
+  text-align: center;
+  line-height: 90%;
+  background: darkgray;
+  display: none; }
+  .menu:hover {
+    color: brown;
+    background: honeydew; }
+
+#section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px; }
+  #section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+  #section .fourFoot_1 {
+    top: -1%;
+    left: -1%;
+    cursor: nwse-resize; }
+  #section .fourFoot_2 {
+    top: -1%;
+    right: -1%;
+    cursor: nesw-resize; }
+  #section .fourFoot_3 {
+    bottom: -1%;
+    right: -1%;
+    cursor: nwse-resize; }
+  #section .fourFoot_4 {
+    bottom: -1%;
+    left: -1%;
+    cursor: nesw-resize; }
+  #section .fourSide_1 {
+    width: 100%;
+    height: 1%;
+    top: 0;
+    left: 0;
+    cursor: row-resize; }
+  #section .fourSide_2 {
+    height: 100%;
+    width: 1%;
+    top: 0;
+    right: 0;
+    cursor: col-resize; }
+  #section .fourSide_3 {
+    width: 100%;
+    height: 1%;
+    bottom: 0;
+    left: 0;
+    cursor: row-resize; }
+  #section .fourSide_4 {
+    height: 100%;
+    width: 1%;
+    top: 0;
+    left: 0;
+    cursor: col-resize; }
+
+#aside {
+  float: left;
+  height: 900px;
+  border: 1px solid brown;
+  position: relative;
+  display: none; }
+  #aside .scroll {
+    width: 9%;
+    padding-left: 1%;
+    position: absolute;
+    height: 50px;
+    background: #ccc;
+    top: 0;
+    right: 0; }
+
+#consolo {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 10px; }
+
+#section .fourFoot_1, #section .fourFoot_2, #section .fourFoot_3, #section .fourFoot_4 {
+  width: 2%;
+  height: 2%;
+  position: absolute;
+  background: #ccc;
+  z-index: 3; }
+
+#section .fourSide_1, #section .fourSide_2, #section .fourSide_3, #section .fourSide_4 {
+  position: absolute;
+  background: #666;
+  z-index: 2; }
+
+#before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1; }
+
+/*# sourceMappingURL=eightQueen.css.map */
