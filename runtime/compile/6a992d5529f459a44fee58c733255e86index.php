@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>我是孙颢 web前端工程师</title>
     <meta name="keywords" content="个人网站,前端, 前端开发, web前端, 前端开发工程师, CSS, JavaScript, HTML, Web标准">
-    <link rel="stylesheet" href="stylesheets/imsunhao.css">
-    <script src="lib/jquery/js/jquery-3.1.0.min.js"></script>
-    <script src="lib/jquery/js/jquery.hover3d.min.js"></script>
-    <script src="lib/modernizr.js"></script>
+    <link rel="stylesheet" href="/stylesheets/imsunhao.css">
+    <script src="/lib/jquery/js/jquery-3.1.0.min.js"></script>
+    <script src="/lib/jquery/js/jquery.hover3d.min.js"></script>
+    <script src="/lib/modernizr.js"></script>
     <script>window.JSONData='<?php echo $this->vars['JSONData']; ?>';</script>
-    <script src="javascript/main.js"></script>
+    <script src="/javascript/main.js"></script>
 </head>
 <body>
 <a class="cd-nav-trigger">

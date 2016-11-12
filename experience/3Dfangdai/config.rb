@@ -1,6 +1,5 @@
 require 'compass/import-once/activate'
 require 'compass'
-require 'bootstrap-sass'
 
 http_path = "/"
 css_dir = "css"

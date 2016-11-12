@@ -190,7 +190,7 @@ function iniCalendar() {
                         }
                     }
                     aODate[i][b].innerHTML = '<h3 class="h3-modefiy">' + startDate + ' <small>' + algorithms.cDay(startDate++) + '</small></h3>' +
-                        '<p class="text-center loading"><img src="/homeWork/images/ajax-loader.gif" height="100" width="100"/></p>';
+                        '<p class="text-center loading"><img src="/experience/weather/images/ajax-loader.gif" height="100" width="100"/></p>';
                     if (aODate[i][b].oldClassName) {
                         aODate[i][b].className = aODate[i][b].oldClassName;
                         continue;
