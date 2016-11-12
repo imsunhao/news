@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>房贷计算器</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+
+    <!--[if lte IE 8]>
+    <style>.support-note .note-ie {
+        display: block;
+    }</style><![endif]-->
+
+</head>
+<body>
+<div class="container">
+
+    <header>
+
+        <h1>3D 房贷计算器</h1>
+        <h2>
+            我的个人网站 <a href="http://imsunhao.com/" target="_blank">imsunhao.com</a><span
+                class="small">（2016年12月1日 正式上线）</span>
+            <span class="demo-note">Your current viewport size shows the simplified version</span>
+        </h2>
+
+        <div class="support-note"><!-- let's check browser support with modernizr -->
+            <span class="no-cssanimations">CSS animations are not supported in your browser</span>
+            <span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+            <span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+            <span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+            <span class="note-ie">Sorry, only modern browsers.</span>
+        </div>
+
+    </header>
+
+    <section class="main">
+
+        <div id="rm-container" class="rm-container">
+
+            <div class="rm-wrapper">
+
+                <div class="rm-cover">
+
+                    <div class="rm-front">
+                        <div class="rm-content">
+                            <div class="rm-logo"></div>
+                            <h2>欢迎使用房贷计算器</h2>
+                            <h3></h3>
+                            <a href="#" class="rm-button-open">贷款计算器</a>
+                            <a href="#" class="rm-button-open">公积金贷款计算器</a>
+                            <a href="#" class="rm-button-open">提前还款计算器</a>
+                            <a href="#" class="rm-button-open">税费计算器</a>
+                        </div>
+                    </div>
+
+                    <div class="rm-back">
+                        <div class="rm-content">
+                            <h4>等额本息</h4>
+                            <dl>
+                                <dd>
+                                    <form class="form-horizontal" role="form" id="left">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">房款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">贷款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">还款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">支付利息：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">首期付款：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">贷款月数：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">月均还款：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
+
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="1">查询结果</a></dt>
+
+                            </dl>
+                        </div><!-- /rm-content -->
+                        <div class="rm-overlay"></div>
+
+                    </div><!-- /rm-back -->
+
+                </div><!-- /rm-cover -->
+
+                <!-- /rm-middle -->
+                <div class="rm-middle">
+                    <div class="rm-inner">
+                        <div class="rm-content">
+                            <h4>房贷计算器</h4>
+                            <dl>
+                                <dd>
+                                    <div class="btn-group" id="btn">
+                                        <button type="button" class="btn btn-active" data-thumb="1">商业贷款</button>
+                                        <button type="button" class="btn btn-default" data-thumb="2">公积金贷款</button>
+                                    </div>
+                                </dd>
+                                <dd>
+                                    <div class="btn-group" id="type2">
+                                        <button type="button" class="btn btn-warning dropdown-toggle"
+                                                data-toggle="dropdown">根据面积、单价计算 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a data-thumb="1">根据面积、单价计算 </a></li>
+                                            <li class="divider"></li>
+                                            <li><a data-thumb="2">根据贷款总额计算 </a></li>
+                                        </ul>
+                                    </div>
+                                </dd>
+                                <dd id="_area">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="plice" class="col-sm-4 control-label">单价：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="单价" id="plice">
+                                                <span class="input-group-addon">元/平米</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="area" class="col-sm-4 control-label">面积：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" id="area" placeholder="面积">
+                                                <span class="input-group-addon">平方米</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="node" class="col-sm-4 control-label">按揭成数：</label>
+                                            <div class="input-group" id="percentage">
+                                                <button type="button" id="node"
+                                                        class="btn btn-default dropdown-toggle"
+                                                        data-toggle="dropdown">7成<span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a data-thumb="0.9">9成</a></li>
+                                                    <li><a data-thumb="0.8">8成</a></li>
+                                                    <li><a data-thumb="0.7">7成</a></li>
+                                                    <li><a data-thumb="0.6">6成</a></li>
+                                                    <li><a data-thumb="0.5">5成</a></li>
+                                                    <li><a data-thumb="0.4">4成</a></li>
+                                                    <li><a data-thumb="0.3">3成</a></li>
+                                                    <li><a data-thumb="0.2">2成</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
+
+                                <dd id="_sum" style="display: none">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="sumAll" class="col-sm-4 control-label">贷款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="单价" id="sumAll">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
+                                <dd>
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group" id="yearF">
+                                            <label for="year" class="col-sm-4 control-label">按揭年数：</label>
+                                            <div class="input-group dropup">
+                                                <button type="button" class="btn btn-default dropdown-toggle"
+                                                        data-toggle="dropdown" id="year">20年（240期）<span
+                                                        class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a data-thumb="0">1年~3年(3)      </a></li>
+                                                    <li><a data-thumb="1">20年（240期）</a></li>
+                                                    <li><a data-thumb="2">25年（300期）</a></li>
+                                                    <li><a data-thumb="3">30年（360期）</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pay" class="col-sm-4 control-label">贷款利率：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" id="pay" class="form-control" placeholder="贷款利率" value="6.15">
+
+                                                <span class="input-group-addon">%</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
+                                <dd>
+                                    <div class="rm-order">
+                                        <p><strong>Would you like us to cater your event?</strong> QQ us &amp; we'll
+                                            help you
+                                            find a venue and organize the event: <strong>313696376</strong></p>
+                                    </div>
+                                </dd>
+
+                                <dt>
+                                    <a href="http://imsunhao.com" class="rm-viewdetails"
+                                       data-thumb="images/imsunhao.jpg" id="about">about me</a>
+                                </dt>
+                            </dl>
+                        </div><!-- /rm-content -->
+                        <div class="rm-overlay"></div>
+                    </div><!-- /rm-inner -->
+                </div>
+
+                <!-- /rm-right -->
+                <div class="rm-right">
+
+                    <div class="rm-front">
+
+                    </div>
+
+                    <div class="rm-back">
+                        <span class="rm-close">Close</span>
+                        <div class="rm-content">
+                            <h4>等额本金</h4>
+                            <dl>
+                                <dd>
+                                    <form class="form-horizontal" role="form" id="right">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">房款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">贷款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">还款总额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">支付利息：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">首期付款：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">贷款月数：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">月均金额：</label>
+                                            <div class="input-group col-sm-8">
+                                                <input type="text" class="form-control" placeholder="贷款利率">
+                                                <span class="input-group-addon">元</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
+                                <dt><a href="#" class="rm-viewdetails" data-thumb="2">查询结果</a></dt>
+                            </dl>
+                        </div><!-- /rm-content -->
+                    </div><!-- /rm-back -->
+
+                </div>
+            </div><!-- /rm-wrapper -->
+
+        </div><!-- /rm-container -->
+
+    </section>
+
+</div>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>-->
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/bootstrap/dropdown.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
